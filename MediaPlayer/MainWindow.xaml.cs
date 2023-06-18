@@ -103,6 +103,7 @@ namespace MediaPlayer
         {
             // 小程序，更新目前影片播放進度
             sliProgress.Value = MedShow.Position.TotalMilliseconds;
+            txtTime.Text = MedShow.Position.ToString("h'h 'm'm 's's'");
         }
 
         private void sliProgress_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
@@ -111,6 +112,11 @@ namespace MediaPlayer
 
             TimeSpan ts = new TimeSpan(0, 0, 0, 0, SliderValue); //將滑桿的數值改變成時間間格的資料形式
             MedShow.Position = ts; // 調整影片播放進度到新的時間
+        }
+
+        private void txtTime_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            
         }
     }
 }
