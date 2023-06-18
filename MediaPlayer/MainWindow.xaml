@@ -20,6 +20,7 @@
         <Button x:Name="btnPause" Content="暫停" HorizontalAlignment="Left" Margin="154,390,0,0" VerticalAlignment="Top" Height="35" Width="67" Background="#FFFDFF00" Click="btnPause_Click"/>
         <Button x:Name="btnStop" Content="停止" HorizontalAlignment="Left" Margin="256,390,0,0" VerticalAlignment="Top" Height="35" Width="74" Background="#FFFF2222" Click="btnStop_Click"/>
         <Button x:Name="btnExit" Content="離開" HorizontalAlignment="Center" Margin="0,390,0,0" VerticalAlignment="Top" Height="35" Width="72" Click="btnExit_Click"/>
+        <Slider x:Name="sliVolume" HorizontalAlignment="Left" Margin="476,398,0,0" VerticalAlignment="Top" Width="232" LargeChange="0.05" Maximum="1" TickFrequency="0.01" Value="0.5" ValueChanged="sliVolume_ValueChanged"/>
 
     </Grid>
 </Window>
